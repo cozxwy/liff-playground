@@ -30,7 +30,7 @@ function App() {
         </div>
 
 
-        <Page>
+ 
             <div className="">
                 <div className="">User Data</div>
                 <Input label="First name" placeholder="First Name" />
@@ -45,8 +45,7 @@ function App() {
                 <Input label="Business" placeholder="Business" />
                 <Input label="Fax" placeholder="Fax" />
             </div>
-        </Page>
-
+ 
 
 
         <h1>Client APIs</h1>
