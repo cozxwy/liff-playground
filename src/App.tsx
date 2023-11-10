@@ -28,6 +28,27 @@ function App() {
           />
           <img src={qrCode} className={styles.qrCode} />
         </div>
+
+
+        <Page>
+            <div className="">
+                <div className="">User Data</div>
+                <Input label="First name" placeholder="First Name" />
+                <Input label="Last name" placeholder="Last Name" />
+                <Input label="User name" placeholder="User Name" />
+                <Input label="Company" placeholder="Company Name" />
+                <Input label="Email" placeholder="Email Address" />
+            </div>
+            <div className="">
+                <div className="">Phone Number</div>
+                <Input label="Home" placeholder="Home" />
+                <Input label="Business" placeholder="Business" />
+                <Input label="Fax" placeholder="Fax" />
+            </div>
+        </Page>
+
+
+
         <h1>Client APIs</h1>
         {!isLoggedIn ? (
           <Snippet
