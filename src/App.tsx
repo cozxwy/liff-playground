@@ -45,6 +45,8 @@ function App() {
             helpText="Run this API to get the response"
             placeHolder="กรอกข้อมูล"
             name="fname"
+            value=""
+            
             />
 
           <Input
@@ -52,6 +54,7 @@ function App() {
             helpText="Run this API to get the response"
             placeHolder="กรอกข้อมูล"
             name="phone"
+            value=""
             />
 
         <Input
