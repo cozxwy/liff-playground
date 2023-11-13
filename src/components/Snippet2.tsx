@@ -106,7 +106,7 @@ export default function Snippet({
                 readonly={true}
                 value={response}
                 placeHolder=''
-                name=''
+                name='userid'
               />
             ))}
         </div>
