@@ -61,14 +61,6 @@ function App() {
             value=""
             />
 
-        <Input
-            label=""
-            readonly
-            helpText="Run this API to get the response"
-            placeHolder="กรอกข้อมูล"
-            name="userid"
-            value=''
-            />
 
           <Snippet2
           apiName="liff.getContext()"
@@ -76,7 +68,7 @@ function App() {
           docUrl="https://developers.line.biz/en/reference/liff/#get-context"
           runner={async () => {
             let a  =JSON.stringify(await liff.getContext()?.userId, null, 4)
-            return a
+            return a.toString()
           }}
         />
 
