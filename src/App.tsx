@@ -3,6 +3,7 @@ import liff from '@line/liff'
 import styles from './App.module.css'
 import Header from './components/Header'
 import Snippet from './components/Snippet'
+import Snippet2 from './components/Snippet2'
 import Input from './components/Input'
 import { FilterContext, FilterTypes } from './Context'
 import qrCode from './qr-code.png'
@@ -11,10 +12,13 @@ import qrCode from './qr-code.png'
 const isMINI = new URLSearchParams(location.search).has('mini')
 const filter = isMINI ? FilterTypes.MINI : FilterTypes.LIFF
 
+
 function App() {
   let isLoggedIn = false
   try {
     isLoggedIn = liff.isLoggedIn()
+  
+   
 
 
   } catch (e) {
@@ -63,8 +67,21 @@ function App() {
             helpText="Run this API to get the response"
             placeHolder="กรอกข้อมูล"
             name="userid"
-            value={`${JSON.stringify( liff.getProfile(), null, 4)}`}
+            value={`${userId}`}
             />
+
+        <Snippet2
+          apiName="liff.getProfile()"
+          version="1.0"
+          docUrl="https://developers.line.biz/en/reference/liff/#get-profile"
+          useTextareaForResponse={true}
+          skipAutoRun={true}
+          runner={async () => {
+            return JSON.stringify(await liff.getProfile(), null, 4)
+          }}
+        />
+
+
 
             <button type="submit">Submit</button>
 
@@ -187,7 +204,8 @@ function App() {
           docUrl="https://developers.line.biz/en/reference/liff/#get-context"
           useTextareaForResponse={true}
           runner={async () => {
-            return JSON.stringify(await liff.getContext(), null, 4)['userId']
+            let a  =JSON.stringify(await liff.getContext(), null, 4)
+            return a['userId']
           }}
         />
         <Snippet
