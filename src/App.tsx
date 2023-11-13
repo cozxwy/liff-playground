@@ -32,6 +32,8 @@ function App() {
           <Input
             readonly
             value={`LIFF URL: https://liff.line.me/${import.meta.env.VITE_LIFF_ID.toString()}`}
+            placeHolder=''
+            name=''
           />
           <img src={qrCode} className={styles.qrCode} />
         </div>
