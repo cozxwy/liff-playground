@@ -70,14 +70,13 @@ function App() {
             value=''
             />
 
-        <Snippet2
-          apiName="liff.getProfile()"
-          version="1.0"
-          docUrl="https://developers.line.biz/en/reference/liff/#get-profile"
-          useTextareaForResponse={true}
-          skipAutoRun={true}
+          <Snippet
+          apiName="liff.getContext()"
+          version="2.0"
+          docUrl="https://developers.line.biz/en/reference/liff/#get-context"
           runner={async () => {
-            return JSON.stringify(await liff.getProfile(), null, 4)
+            let a  =JSON.stringify(await liff.getContext()?.userId, null, 4)
+            return a
           }}
         />
 
@@ -204,7 +203,7 @@ function App() {
           docUrl="https://developers.line.biz/en/reference/liff/#get-context"
           useTextareaForResponse={true}
           runner={async () => {
-            let a  =JSON.stringify(await liff.getContext(), null, 4)
+            let a  =JSON.stringify(await liff.getContext()?.userId, null, 4)
             return a
           }}
         />
