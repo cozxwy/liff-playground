@@ -126,6 +126,8 @@ export default function Snippet({
                 helpText="Run this API to get the response"
                 readonly={true}
                 value={response}
+                placeHolder=''
+                name=''
               />
             ))}
         </div>
