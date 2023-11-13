@@ -8,7 +8,7 @@ import Input from './components/Input'
 import Input2 from './components/Input2'
 import { FilterContext, FilterTypes } from './Context'
 import qrCode from './qr-code.png'
-
+import Button from './components/Button2'
 
 const isMINI = new URLSearchParams(location.search).has('mini')
 const filter = isMINI ? FilterTypes.MINI : FilterTypes.LIFF
@@ -78,7 +78,13 @@ function App() {
 
 
 
-            <button type="submit">Submit</button>
+            <Button variant="primary"
+                size="S"
+                onClick={() => {
+                  
+                }}>
+                  
+                  Submit</Button>
 
           </form>
        
