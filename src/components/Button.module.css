@@ -8,6 +8,7 @@
   font-weight: 700;
   color: #ffffff;
   border: none;
+  float: right;
 }
 
 .button:hover {
@@ -34,6 +35,4 @@
   background: rgb(234, 236, 237);
 }
 
-.rightB {
-  float: right;
-}
+
