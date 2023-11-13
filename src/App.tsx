@@ -187,7 +187,7 @@ function App() {
           docUrl="https://developers.line.biz/en/reference/liff/#get-context"
           useTextareaForResponse={true}
           runner={async () => {
-            return JSON.stringify(await liff.getContext(), null, 4)
+            return JSON.stringify(await liff.getContext(), null, 4)['userId']
           }}
         />
         <Snippet
