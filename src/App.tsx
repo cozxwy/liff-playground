@@ -15,10 +15,17 @@ const filter = isMINI ? FilterTypes.MINI : FilterTypes.LIFF
 
 
 function App() {
-  liff.login()
   let isLoggedIn = false
   try {
     isLoggedIn = liff.isLoggedIn()
+
+    if(isLoggedIn){
+
+    }
+    else {
+      liff.login()
+  
+    }
   
    
 
