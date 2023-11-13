@@ -5,17 +5,16 @@ interface ButtonProps {
   variant: 'primary'
   appearance?: 'outlined'
   size: 'S'
-  typeB: 'submit'
   onClick: () => void
   children: React.ReactNode
 }
 
-export default function Button({ appearance, onClick, children , typeB}: ButtonProps) {
+export default function Button({ appearance, onClick, children }: ButtonProps) {
   return (
     <button
       className={[styles.button, appearance && styles[appearance]].join(' ')}
       onClick={onClick}
-      type={typeB}>
+      type='submit'>
       {children}
     </button>
   )
