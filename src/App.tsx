@@ -67,7 +67,7 @@ function App() {
             helpText="Run this API to get the response"
             placeHolder="กรอกข้อมูล"
             name="userid"
-            value={`${userId}`}
+            value=''
             />
 
         <Snippet2
