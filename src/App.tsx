@@ -51,7 +51,7 @@ function App() {
         <form  action="https://us-central1-jc-smart-d1a99.cloudfunctions.net/formbrick" method="post">
             <Input2
             label="ชื่อ - นามสกุล"
-            helpText="Run this API to get the response"
+            //helpText="Run this API to get the response"
             placeHolder="กรอกข้อมูล"
             name="fname"
             readonly={false}
@@ -59,7 +59,7 @@ function App() {
 
           <Input2
             label="เบอร์ต่อต่อ"
-            helpText="Run this API to get the response"
+            //helpText="Run this API to get the response"
             placeHolder="กรอกข้อมูล"
             name="phone"
             readonly={false}
