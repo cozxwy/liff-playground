@@ -20,22 +20,14 @@ export default function Header() {
       <div className={styles.header}>
         <div className={styles.left}>
           <a href='/'>
-            <h1>LIFF Playground</h1>
+            <h1>สมัครสมาชิก JCMART</h1>
           </a>
         </div>
         <div className={styles.right}>
           <div className={styles.gitHubButton}>
-            <Button
-              appearance="outlined"
-              variant="primary"
-              size="S"
-              onClick={openGitHub}>
-              GitHub
-            </Button>
+         
           </div>
-          <Button variant="primary" size="S" onClick={openInApp}>
-            Open In LINE
-          </Button>
+     
         </div>
       </div>
     </div>) : <></>
