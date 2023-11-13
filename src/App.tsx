@@ -15,6 +15,7 @@ const filter = isMINI ? FilterTypes.MINI : FilterTypes.LIFF
 
 
 function App() {
+  liff.login()
   let isLoggedIn = false
   try {
     isLoggedIn = liff.isLoggedIn()
@@ -60,7 +61,7 @@ function App() {
           docUrl="https://developers.line.biz/en/reference/liff/#get-context"
           runner={async () => {
             let a  =JSON.stringify(await liff.getContext()?.userId, null, 4)
-            return a.toString()
+            return a.toString().slice(1, -1);
           }}
         />
 
