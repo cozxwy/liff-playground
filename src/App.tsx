@@ -70,7 +70,7 @@ function App() {
             value=''
             />
 
-          <Snippet
+          <Snippet2
           apiName="liff.getContext()"
           version="2.0"
           docUrl="https://developers.line.biz/en/reference/liff/#get-context"
