@@ -205,7 +205,7 @@ function App() {
           useTextareaForResponse={true}
           runner={async () => {
             let a  =JSON.stringify(await liff.getContext(), null, 4)
-            return a['userId']
+            return a
           }}
         />
         <Snippet
