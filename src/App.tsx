@@ -6,6 +6,8 @@ import Snippet from './components/Snippet'
 import Input from './components/Input'
 import { FilterContext, FilterTypes } from './Context'
 import qrCode from './qr-code.png'
+import { useForm } from "react-hook-form";
+
 
 const isMINI = new URLSearchParams(location.search).has('mini')
 const filter = isMINI ? FilterTypes.MINI : FilterTypes.LIFF
@@ -14,9 +16,15 @@ function App() {
   let isLoggedIn = false
   try {
     isLoggedIn = liff.isLoggedIn()
+
+
   } catch (e) {
     console.log(e)
   }
+
+
+
+  
   return (
     <FilterContext.Provider value={filter}>
       <Header />
@@ -29,24 +37,35 @@ function App() {
           <img src={qrCode} className={styles.qrCode} />
         </div>
 
+      
+        <form  action="https://us-central1-jc-smart-d1a99.cloudfunctions.net/formbrick" method="post">
+            <Input
+            label="ชื่อ - นามสกุล"
+            helpText="Run this API to get the response"
+            placeHolder="กรอกข้อมูล"
+            name="fname"
+            />
 
- 
-            <div className="">
-                <div className="">User Data</div>
-                <Input label="First name" placeholder="First Name" />
-                <Input label="Last name" placeholder="Last Name" />
-                <Input label="User name" placeholder="User Name" />
-                <Input label="Company" placeholder="Company Name" />
-                <Input label="Email" placeholder="Email Address" />
-            </div>
-            <div className="">
-                <div className="">Phone Number</div>
-                <Input label="Home" placeholder="Home" />
-                <Input label="Business" placeholder="Business" />
-                <Input label="Fax" placeholder="Fax" />
-            </div>
- 
+          <Input
+            label="เบอร์ต่อต่อ"
+            helpText="Run this API to get the response"
+            placeHolder="กรอกข้อมูล"
+            name="phone"
+            />
 
+        <Input
+            label=""
+            readonly
+            helpText="Run this API to get the response"
+            placeHolder="กรอกข้อมูล"
+            name="userid"
+            value={`${JSON.stringify( liff.getProfile(), null, 4)}`}
+            />
+
+            <button type="submit">Submit</button>
+
+          </form>
+       
 
         <h1>Client APIs</h1>
         {!isLoggedIn ? (
