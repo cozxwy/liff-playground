@@ -12,9 +12,9 @@ interface ButtonProps {
 export default function Button({ appearance, onClick, children }: ButtonProps) {
   return (
     <button
-      className={[styles.button, appearance && styles[appearance]].join(' ')}
+      className={[styles.button, appearance && styles[appearance]].join(' ') && 'rightB'}
       onClick={onClick}
-      type='submit' id="rightB"> 
+      type='submit' > 
       {children}
     </button>
   )
