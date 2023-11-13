@@ -55,6 +55,7 @@ function App() {
             placeHolder="กรอกข้อมูล"
             name="fname"
             readonly={false}
+            require
             />
 
           <Input2
@@ -63,6 +64,7 @@ function App() {
             placeHolder="กรอกข้อมูล"
             name="phone"
             readonly={false}
+            require
             />
 
 
