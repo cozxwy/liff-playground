@@ -50,7 +50,7 @@ function App() {
             placeHolder="กรอกข้อมูล"
             name="fname"
             value=""
-            
+            readonly={false}
             />
 
           <Input
@@ -59,6 +59,7 @@ function App() {
             placeHolder="กรอกข้อมูล"
             name="phone"
             value=""
+            readonly={false}
             />
 
 
