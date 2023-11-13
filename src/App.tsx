@@ -6,7 +6,6 @@ import Snippet from './components/Snippet'
 import Input from './components/Input'
 import { FilterContext, FilterTypes } from './Context'
 import qrCode from './qr-code.png'
-import { useForm } from "react-hook-form";
 
 
 const isMINI = new URLSearchParams(location.search).has('mini')
