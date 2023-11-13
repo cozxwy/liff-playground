@@ -5,6 +5,7 @@ import Header from './components/Header'
 import Snippet from './components/Snippet'
 import Snippet2 from './components/Snippet2'
 import Input from './components/Input'
+import Input2 from './components/Input2'
 import { FilterContext, FilterTypes } from './Context'
 import qrCode from './qr-code.png'
 
@@ -32,33 +33,23 @@ function App() {
     <FilterContext.Provider value={filter}>
       <Header />
       <div className={styles.container}>
-        <div className={styles.liffIdBox}>
-          <Input
-            readonly
-            value={`LIFF URL: https://liff.line.me/${import.meta.env.VITE_LIFF_ID.toString()}`}
-            placeHolder=''
-            name=''
-          />
-          <img src={qrCode} className={styles.qrCode} />
-        </div>
+      
 
       
         <form  action="https://us-central1-jc-smart-d1a99.cloudfunctions.net/formbrick" method="post">
-            <Input
+            <Input2
             label="ชื่อ - นามสกุล"
             helpText="Run this API to get the response"
             placeHolder="กรอกข้อมูล"
             name="fname"
-            value=""
             readonly={false}
             />
 
-          <Input
+          <Input2
             label="เบอร์ต่อต่อ"
             helpText="Run this API to get the response"
             placeHolder="กรอกข้อมูล"
             name="phone"
-            value=""
             readonly={false}
             />
 
