@@ -23,7 +23,7 @@ function App() {
 
     }
     else {
-      liff.login()
+      //liff.login()
   
     }
   
@@ -40,34 +40,9 @@ function App() {
   return (
     <FilterContext.Provider value={filter}>
 
-{!isLoggedIn ? (
-          <Snippet
-            apiName="liff.login()"
-            version="2.0"
-            docUrl="https://developers.line.biz/en/reference/liff/#login"
-            skipAutoRun={true}
-            runner={async () => {
-              return liff.login()
-            }}
-          />
-        ) : (
-          <Snippet
-            apiName="liff.logout()"
-            version="2.0"
-            docUrl="https://developers.line.biz/en/reference/liff/#logout"
-            skipAutoRun={true}
-            hideResponse={true}
-            runner={async () => {
-              // reload after logout.
-              setTimeout(() => {
-                location.reload()
-              }, 1000)
-              return liff.logout()
-            }}
-          />
-        )}
 
-        
+
+
       <Header />
       <div className={styles.container}>
       
