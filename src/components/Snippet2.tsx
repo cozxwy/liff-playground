@@ -76,13 +76,7 @@ export default function Snippet({
           ((filter === FilterTypes.LIFF && isInLIFF) || (filter === FilterTypes.MINI && isInMINI))
           && <div className={styles.snippet}>
           <div className={styles.head}>
-            <h2 className={styles.title}>
-              <span className={styles.text}>{apiName}</span>
-              <Tag>≥{version}</Tag>
-              {loginRequired && <Tag backgroundColor={primaryRed}>Login Required</Tag>} {inClientOnly && <Tag backgroundColor={primaryRed}>LINE Client only</Tag>}
-              {isInLIFF && <Tag backgroundColor={primaryBlue}>LIFF</Tag>}
-              {isInMINI && <Tag backgroundColor={primaryOrange}>MINI</Tag>}
-            </h2>
+        
             <div className={styles.action}>
              
             </div>
