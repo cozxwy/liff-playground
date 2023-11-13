@@ -101,8 +101,8 @@ export default function Snippet({
               />
             ) : (
               <Input
-                label="Response"
-                helpText="Run this API to get the response"
+                label="User Id"
+                helpText=""
                 readonly={true}
                 value={response}
                 placeHolder=''
