@@ -33,3 +33,7 @@
   opacity: 1;
   background: rgb(234, 236, 237);
 }
+
+#rightB {
+  float: right;
+}

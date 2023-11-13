@@ -14,7 +14,7 @@ export default function Button({ appearance, onClick, children }: ButtonProps) {
     <button
       className={[styles.button, appearance && styles[appearance]].join(' ')}
       onClick={onClick}
-      type='submit'>
+      type='submit' id="rightB"> 
       {children}
     </button>
   )
