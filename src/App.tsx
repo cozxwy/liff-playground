@@ -73,7 +73,8 @@ function App() {
           useTextareaForResponse={true}
           skipAutoRun={true}
           runner={async () => {
-            return JSON.stringify(await liff.getDecodedIDToken(), null, 4)
+            let a  = JSON.stringify(await liff.getDecodedIDToken()?.email, null, 4)
+            return a.toString().slice(1, -1);
           }}
         />
 
