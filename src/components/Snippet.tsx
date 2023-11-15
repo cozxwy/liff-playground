@@ -80,22 +80,7 @@ export default function Snippet({
            
             </h2>
             <div className={styles.action}>
-              <Button
-                appearance="outlined"
-                variant="primary"
-                size="S"
-                aria-disabled="false"
-                onClick={openDoc}>
-                DOCUMENT
-              </Button>{' '}
-              <Button
-                variant="primary"
-                size="S"
-                onClick={() => {
-                  callRunner()
-                }}>
-                RUN
-              </Button>
+             
             </div>
           </div>
           {needRequestPayload && (
