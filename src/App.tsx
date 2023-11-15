@@ -23,7 +23,7 @@ function App() {
 
     }
     else {
-      //liff.login()
+      liff.login()
   
     }
   
