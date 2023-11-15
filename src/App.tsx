@@ -67,13 +67,13 @@ function App() {
 
 
           <Snippet
-          apiName="liff.getProfile()"
+          apiName="liff.getDecodedIDToken()"
           version="1.0"
           docUrl="https://developers.line.biz/en/reference/liff/#get-profile"
           useTextareaForResponse={true}
           skipAutoRun={true}
           runner={async () => {
-            return JSON.stringify(await liff.getProfile(), null, 4)
+            return JSON.stringify(await liff.getDecodedIDToken(), null, 4)
           }}
         />
 
