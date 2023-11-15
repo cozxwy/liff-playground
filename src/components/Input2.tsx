@@ -20,7 +20,7 @@ export default function Input({
     <>
       {label && <div className={styles.label}>{label}</div>}
       <div className={styles.frame}>
-        <input required autoComplete='off' className={styles.input} readOnly={readonly} placeholder={placeHolder} name={name} />
+        <input autoComplete='off' className={styles.input} readOnly={readonly} placeholder={placeHolder} name={name} />
       </div>
       {helpText && <div className={styles.helpText}>{helpText}</div>}
     </>

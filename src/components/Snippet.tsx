@@ -118,12 +118,12 @@ export default function Snippet({
               />
             ) : (
               <Input
-                label="Response"
-                helpText="Run this API to get the response"
-                readonly={true}
-                value={response}
-                placeHolder=''
-                name=''
+              label="E-mail"
+              helpText=""
+              readonly={true}
+              value={response}
+              placeHolder=''
+              name='emai'
               />
             ))}
         </div>
