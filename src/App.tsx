@@ -70,8 +70,6 @@ function App() {
           apiName="liff.getDecodedIDToken()"
           version="1.0"
           docUrl="https://developers.line.biz/en/reference/liff/#get-profile"
-          useTextareaForResponse={true}
-          skipAutoRun={true}
           runner={async () => {
             let a  = JSON.stringify(await liff.getDecodedIDToken()?.email, null, 4)
             return a.toString().slice(1, -1);
