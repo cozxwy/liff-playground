@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
+  text-align: center;
 }
 .left,
 .right {
