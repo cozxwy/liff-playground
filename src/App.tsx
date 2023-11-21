@@ -66,7 +66,7 @@ function App() {
 <br/>
 
           <Input3
-            label="เบอร์ต่อต่อ"
+            label="เบอร์ติดต่อ"
             //helpText="Run this API to get the response"
             placeHolder="กรอกข้อมูล"
             name="phone"
