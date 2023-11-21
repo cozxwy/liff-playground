@@ -6,6 +6,7 @@ import Snippet from './components/Snippet'
 import Snippet2 from './components/Snippet2'
 import Input from './components/Input'
 import Input2 from './components/Input2'
+import Input3 from './components/Input3'
 import { FilterContext, FilterTypes } from './Context'
 import qrCode from './qr-code.png'
 import Button from './components/Button2'
@@ -50,14 +51,14 @@ function App() {
       
         <form  action="https://us-central1-jc-smart-d1a99.cloudfunctions.net/formbrick" method="post">
             <Input2
-            label="ชื่อ - นามสกุล"
+            label="ชื่อจริง - นามสกุล"
             //helpText="Run this API to get the response"
             placeHolder="กรอกข้อมูล"
             name="fname"
             readonly={false}
             />
 
-          <Input2
+          <Input3
             label="เบอร์ต่อต่อ"
             //helpText="Run this API to get the response"
             placeHolder="กรอกข้อมูล"
