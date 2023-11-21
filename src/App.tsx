@@ -97,7 +97,7 @@ function App() {
                   
                 }}>
                   
-                  Submit</Button>
+                  ลงทะเบียน</Button>
 
           </form>
        
